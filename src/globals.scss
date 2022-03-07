@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+html {
+  --c-yellow: #dcd023;
+  --c-green: #23dc70;
+  --c-red: #f44;
+  --c-orange: #f90;
+  --c-blue: #55f;
+
+  --main-color: #dd2476;
+  --secondary-color: #ff512f;
+
+  --bg-1: #171821;
+  --bg-2: #1c1d26;
+  --bg-3: #25252e;
+
+  --txt-1: #e2e4f0;
+  --txt-2: #737486;
+
+  --w-px: 1px;
+  --w-1: 1rem;
+
+  --shadow-1: 0px 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-2: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0px 8px 32px rgba(0, 0, 0, 0.06);
+
+  --ani-1: 0.15s ease-in-out;
+}
+
+// Container
+.container {
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+  display: flex;
+  padding-left: calc(var(--w-1) * 2);
+  padding-right: calc(var(--w-1) * 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// KURSADUI RESET
+/* RESET */
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  pointer-events: none;
+}
+
+ul,
+ol {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: var(--w-1);
+  height: var(--w-1);
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-4);
+}
+::-webkit-scrollbar-thumb {
+  width: var(--w-1);
+  background: var(--txt-2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: var(--txt-1);
+  background-color: var(--bg-1);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: var(--ani-1);
+
+  #root {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
