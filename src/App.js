@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { nanoid } from 'nanoid'
 import styles from './App.module.scss'
-import logo from './assets/kursadsimsek.jpg'
+import logo from './assets/pp.jpg'
 
 import { CopyIcon, CopySuccessIcon, DribbbleIcon, GithubIcon, InstagramIcon, LinkedInIcon, SpotifyIcon, TwitterIcon } from './assets/Icon'
 import Helmet from 'react-helmet'
